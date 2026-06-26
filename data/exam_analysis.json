@@ -1,0 +1,165 @@
+{
+  "course_info": {
+    "name": "מודלים של רגרסיה ליניארית",
+    "lecturer": "ד\"ר יקיר ברצ'נקו",
+    "course_number": "364-1-1061",
+    "current_semester": "ב' 2026"
+  },
+  "exam_structure": {
+    "num_questions": 3,
+    "max_points": 108,
+    "max_grade": 100,
+    "duration_hours": 3,
+    "allowed_materials": ["מחשבון", "דפי נוסחאות", "טבלאות סטטיסטיות"]
+  },
+  "topics": [
+    {
+      "id": 1,
+      "name": "OLS ומודל לינארי פשוט",
+      "subtopics": ["אומדי OLS", "משוואות נורמליות", "R²", "תכונות ישר הריבועים הפחותים", "SST=SSR+SSE", "BLUE"],
+      "probability": 0.7,
+      "difficulty": "בינוני",
+      "typical_points": 10
+    },
+    {
+      "id": 2,
+      "name": "המודל הנורמלי והסקה",
+      "subtopics": ["MLE", "רווח סמך לשיפוע", "רווח סמך לחותך", "רווח סמך לחיזוי", "רווח סמך לתצפית חדשה", "מבחן t"],
+      "probability": 0.9,
+      "difficulty": "בינוני-גבוה",
+      "typical_points": 15
+    },
+    {
+      "id": 3,
+      "name": "רגרסיה מרובה",
+      "subtopics": ["ייצוג וקטורי", "Hat Matrix", "משוואות נורמליות וקטוריות", "גיאומטריה של OLS"],
+      "probability": 0.85,
+      "difficulty": "גבוה",
+      "typical_points": 15
+    },
+    {
+      "id": 4,
+      "name": "הסקה ברגרסיה מרובה",
+      "subtopics": ["מבחן F כללי", "מבחן F חלקי", "מודלים מקוננים", "מבחן t שולי"],
+      "probability": 0.95,
+      "difficulty": "בינוני-גבוה",
+      "typical_points": 15
+    },
+    {
+      "id": 5,
+      "name": "R²adj ובחירת מודלים",
+      "subtopics": ["R²adj", "AIC", "BIC", "Cp Mallows", "אופטימיות", "Forward/Backward selection"],
+      "probability": 0.6,
+      "difficulty": "בינוני",
+      "typical_points": 10
+    },
+    {
+      "id": 6,
+      "name": "רגולריזציה ו-CV",
+      "subtopics": ["Ridge regression", "LASSO", "LOOCV", "k-fold CV", "קשר LOOCV ל-Cp"],
+      "probability": 0.45,
+      "difficulty": "בינוני",
+      "typical_points": 10
+    },
+    {
+      "id": 7,
+      "name": "אינטראקציות וטרנספורמציות",
+      "subtopics": ["משתני דמה", "אינטראקציות", "טרנספורמציות מייצבות שונות", "Box-Cox", "משתנים קטגוריאליים"],
+      "probability": 0.75,
+      "difficulty": "בינוני",
+      "typical_points": 15
+    },
+    {
+      "id": 8,
+      "name": "דיאגנוסטיקה",
+      "subtopics": ["הטרוסקדסטיות", "תרשימי שאריות", "Breusch-Pagan", "Goldfeld-Quandt", "מולטיקולינאריות", "VIF", "Condition Number", "Leverage", "Cook's Distance"],
+      "probability": 0.75,
+      "difficulty": "בינוני-גבוה",
+      "typical_points": 20
+    },
+    {
+      "id": 9,
+      "name": "רגרסיה לוגיסטית ו-GLMs",
+      "subtopics": ["פונקציה לוגיסטית", "Logit", "Odds Ratio", "Deviance", "LRT", "Wald test", "MLE ברגרסיה לוגיסטית", "GLM כללי"],
+      "probability": 0.6,
+      "difficulty": "גבוה",
+      "typical_points": 20
+    },
+    {
+      "id": 10,
+      "name": "נושאים תיאורטיים/הוכחות",
+      "subtopics": ["גאוס-מרקוב", "WLS", "Omitted Variable Bias", "הטיה מהשמטת משתנה", "חסרות הטיה של OLS"],
+      "probability": 0.8,
+      "difficulty": "גבוה",
+      "typical_points": 20
+    },
+    {
+      "id": 11,
+      "name": "פרדוקס סימפסון / Confounders",
+      "subtopics": ["פרדוקס סימפסון", "משתנה מבלבל", "כיוון הקשר משתנה"],
+      "probability": 0.55,
+      "difficulty": "בינוני",
+      "typical_points": 10
+    },
+    {
+      "id": 12,
+      "name": "נתונים חסרים ושגיאת מדידה",
+      "subtopics": ["MCAR", "MAR", "MNAR", "Imputation", "Attenuation Bias"],
+      "probability": 0.3,
+      "difficulty": "בינוני",
+      "typical_points": 10
+    }
+  ],
+  "exams_analyzed": [
+    {
+      "year": "2025ב",
+      "moed": "א",
+      "questions": [
+        {"q_num": 1, "points": 45, "topics": [4, 2, 3], "description": "פלט R עם ערכים חסרים, רווח סמך, מבחן F, דירוג מקדמים"},
+        {"q_num": 2, "points": 45, "topics": [7, 11, 10], "description": "אינטראקציות, פרדוקס סימפסון, עקביות מודלים"},
+        {"q_num": 3, "points": 18, "topics": [10], "description": "הטיית משתנה מושמט (Omitted Variable Bias)"}
+      ]
+    },
+    {
+      "year": "2025א",
+      "moed": "א",
+      "questions": [
+        {"q_num": 1, "points": 40, "topics": [4, 5, 3], "description": "השוואת מודלים, R²adj, מבחן F חלקי, פרשנות פיזיולוגית"},
+        {"q_num": 2, "points": 39, "topics": [8, 7], "description": "תרשימי שאריות, טרנספורמציות, חוסר לינאריות"},
+        {"q_num": 3, "points": 29, "topics": [10], "description": "גאוס-מרקוב מוכלל (WLS), הוכחה"}
+      ]
+    },
+    {
+      "year": "2025א",
+      "moed": "ב",
+      "questions": [
+        {"q_num": 1, "points": 39, "topics": [1, 2], "description": "אפס מוחלט, רווח סמך, תצפית עתידית"},
+        {"q_num": 2, "points": 39, "topics": [7, 8], "description": "משתנים קטגוריאליים, תרשימי שאריות מול ערים"},
+        {"q_num": 3, "points": 30, "topics": [10], "description": "WLS, ציונים ממוצעים בבתי ספר"}
+      ]
+    }
+  ],
+  "prediction_2026B": {
+    "confidence": "medium-high",
+    "predicted_structure": [
+      {
+        "question": 1,
+        "predicted_points": "40-45",
+        "predicted_topics": ["פלט R רגרסיה מרובה", "רווח סמך", "מבחן F", "השוואת מודלים"],
+        "probability": 0.9
+      },
+      {
+        "question": 2,
+        "predicted_points": "35-45",
+        "predicted_topics": ["דיאגנוסטיקה / רגרסיה לוגיסטית / אינטראקציות"],
+        "probability": 0.8
+      },
+      {
+        "question": 3,
+        "predicted_points": "18-30",
+        "predicted_topics": ["הוכחה תיאורטית / OVB / גאוס-מרקוב"],
+        "probability": 0.85
+      }
+    ]
+  }
+}

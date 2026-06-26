@@ -1,0 +1,101 @@
+"""Build complete classified questions database from all exams"""
+import json
+
+questions = [
+    # === 2025ב מועד א ===
+    {"exam":"2025ב מועד א","question":1,"sub":"א","points":10,"main_topic":"רגרסיה מרובה","specific_topic":"רווח סמך למקדם","description":"רווח סמך 99% עבור מקדם x1"},
+    {"exam":"2025ב מועד א","question":1,"sub":"ב","points":10,"main_topic":"רגרסיה מרובה","specific_topic":"מבחן F כללי","description":"מובהקות הרגרסיה ברמה 5%"},
+    {"exam":"2025ב מועד א","question":1,"sub":"ג","points":15,"main_topic":"רגרסיה מרובה","specific_topic":"מבחן t שולי","description":"דירוג מקדמים לפי מובהקות"},
+    {"exam":"2025ב מועד א","question":2,"sub":"א","points":7,"main_topic":"רגרסיה מרובה","specific_topic":"פרשנות מקדמים","description":"הסבר ממצאי מודל פשוט"},
+    {"exam":"2025ב מועד א","question":2,"sub":"ב","points":8,"main_topic":"אינטראקציות וטרנספורמציות","specific_topic":"משתני דמה","description":"פרשנות מודל עם משתנה בינארי"},
+    {"exam":"2025ב מועד א","question":2,"sub":"ג","points":15,"main_topic":"אינטראקציות וטרנספורמציות","specific_topic":"פרדוקס סימפסון","description":"סתירה בין מודלים"},
+    {"exam":"2025ב מועד א","question":2,"sub":"ד","points":15,"main_topic":"אינטראקציות וטרנספורמציות","specific_topic":"אינטראקציות","description":"עקביות מודל אינטראקציה"},
+    {"exam":"2025ב מועד א","question":3,"sub":"א","points":5,"main_topic":"רגרסיה מרובה","specific_topic":"הטיית משתנה מושמט (OVB)","description":"חסרות הטיה בהשמטת משתנה"},
+    {"exam":"2025ב מועד א","question":3,"sub":"ב","points":13,"main_topic":"רגרסיה מרובה","specific_topic":"הטיית משתנה מושמט (OVB)","description":"חישוב ההטיה בעזרת Cov"},
+    # === 2025א מועד א ===
+    {"exam":"2025א מועד א","question":1,"sub":"א","points":10,"main_topic":"רגרסיה מרובה","specific_topic":"R²adj / השוואת מודלים","description":"השוואה בין מודלים"},
+    {"exam":"2025א מועד א","question":1,"sub":"ב","points":10,"main_topic":"רגרסיה פשוטה","specific_topic":"חישוב אומדי OLS","description":"חישוב OLS וסכומי ריבועים"},
+    {"exam":"2025א מועד א","question":1,"sub":"ג","points":10,"main_topic":"רגרסיה מרובה","specific_topic":"מבחן F חלקי","description":"F חלקי בין מודלים מקוננים"},
+    {"exam":"2025א מועד א","question":1,"sub":"ד","points":10,"main_topic":"רגרסיה מרובה","specific_topic":"פרשנות מקדמים","description":"בעיית יחידות"},
+    {"exam":"2025א מועד א","question":2,"sub":"א","points":10,"main_topic":"דיאגנוסטיקה","specific_topic":"תרשימי שאריות","description":"תרשים שאריות פרבולי"},
+    {"exam":"2025א מועד א","question":2,"sub":"ב","points":15,"main_topic":"דיאגנוסטיקה","specific_topic":"חוסר לינאריות","description":"שאריות פרבוליות ומונוטוניות"},
+    {"exam":"2025א מועד א","question":2,"sub":"ג","points":14,"main_topic":"אינטראקציות וטרנספורמציות","specific_topic":"טרנספורמציות","description":"תיקון חוסר לינאריות"},
+    {"exam":"2025א מועד א","question":3,"sub":"א","points":7,"main_topic":"רגרסיה מרובה","specific_topic":"גאוס-מרקוב","description":"OLS חסר הטיה עם שונויות לא שוות"},
+    {"exam":"2025א מועד א","question":3,"sub":"ב","points":7,"main_topic":"רגרסיה מרובה","specific_topic":"WLS","description":"שונות האומד החדש"},
+    {"exam":"2025א מועד א","question":3,"sub":"ג","points":15,"main_topic":"רגרסיה מרובה","specific_topic":"גאוס-מרקוב מוכלל","description":"הוכחה WLS טוב מOLS"},
+    # === 2025א מועד ב ===
+    {"exam":"2025א מועד ב","question":1,"sub":"א","points":13,"main_topic":"רגרסיה פשוטה","specific_topic":"חישוב אומדי OLS","description":"אמידת האפס המוחלט"},
+    {"exam":"2025א מועד ב","question":1,"sub":"ב","points":13,"main_topic":"המודל הנורמלי","specific_topic":"רווח סמך לחותך","description":"CI 95% לאפס המוחלט"},
+    {"exam":"2025א מועד ב","question":1,"sub":"ג","points":13,"main_topic":"המודל הנורמלי","specific_topic":"רווח חיזוי (prediction)","description":"הסתברות תצפית חדשה ברווח"},
+    {"exam":"2025א מועד ב","question":2,"sub":"א","points":13,"main_topic":"דיאגנוסטיקה","specific_topic":"תרשימי שאריות","description":"שרטוט שאריות מול x"},
+    {"exam":"2025א מועד ב","question":2,"sub":"ב","points":13,"main_topic":"דיאגנוסטיקה","specific_topic":"תרשימי שאריות","description":"שאריות מול ערים"},
+    {"exam":"2025א מועד ב","question":2,"sub":"ג","points":13,"main_topic":"אינטראקציות וטרנספורמציות","specific_topic":"משתנים קטגוריאליים","description":"מודל עם דמה לערים"},
+    {"exam":"2025א מועד ב","question":3,"sub":"א","points":15,"main_topic":"רגרסיה מרובה","specific_topic":"WLS","description":"WLS לציונים בבתי ספר"},
+    {"exam":"2025א מועד ב","question":3,"sub":"ב","points":15,"main_topic":"רגרסיה מרובה","specific_topic":"WLS","description":"σ² לא ידוע"},
+    # === 2024א מועד א ===
+    {"exam":"2024א מועד א","question":1,"sub":"א","points":10,"main_topic":"רגרסיה פשוטה","specific_topic":"חישוב אומדי OLS","description":"חישוב אומדים"},
+    {"exam":"2024א מועד א","question":1,"sub":"ב","points":10,"main_topic":"המודל הנורמלי","specific_topic":"רווח סמך לשיפוע","description":"CI 95% לשיפוע"},
+    {"exam":"2024א מועד א","question":1,"sub":"ג","points":10,"main_topic":"רגרסיה פשוטה","specific_topic":"R²","description":"חישוב R²"},
+    {"exam":"2024א מועד א","question":1,"sub":"ד","points":10,"main_topic":"רגרסיה מרובה","specific_topic":"מבחן F חלקי","description":"השוואת מודלים"},
+    {"exam":"2024א מועד א","question":2,"sub":"א","points":15,"main_topic":"דיאגנוסטיקה","specific_topic":"מולטיקולינאריות","description":"זיהוי מולטיקולינאריות"},
+    {"exam":"2024א מועד א","question":2,"sub":"ב","points":15,"main_topic":"דיאגנוסטיקה","specific_topic":"תרשימי שאריות","description":"פרשנות תרשימים"},
+    {"exam":"2024א מועד א","question":3,"sub":"א","points":9,"main_topic":"רגרסיה מרובה","specific_topic":"הטיית משתנה מושמט (OVB)","description":"הטיה מהשמטת משתנה"},
+    {"exam":"2024א מועד א","question":3,"sub":"ב","points":9,"main_topic":"נתונים חסרים ושגיאת מדידה","specific_topic":"שגיאת מדידה (Attenuation)","description":"Attenuation bias"},
+    # === 2024ב מועד א ===
+    {"exam":"2024ב מועד א","question":1,"sub":"א","points":10,"main_topic":"רגרסיה מרובה","specific_topic":"פלט R / פרשנות","description":"קריאת פלט R"},
+    {"exam":"2024ב מועד א","question":1,"sub":"ב","points":10,"main_topic":"רגרסיה מרובה","specific_topic":"מבחן F כללי","description":"מובהקות כללית"},
+    {"exam":"2024ב מועד א","question":1,"sub":"ג","points":10,"main_topic":"המודל הנורמלי","specific_topic":"רווח סמך למקדם","description":"CI למקדם"},
+    {"exam":"2024ב מועד א","question":2,"sub":"א","points":20,"main_topic":"רגרסיה לוגיסטית","specific_topic":"כתיבת מודל לוגיסטי","description":"ביטוי π(x) ופרשנות"},
+    {"exam":"2024ב מועד א","question":2,"sub":"ב","points":10,"main_topic":"רגרסיה לוגיסטית","specific_topic":"Odds Ratio","description":"חישוב OR"},
+    {"exam":"2024ב מועד א","question":2,"sub":"ג","points":10,"main_topic":"רגרסיה לוגיסטית","specific_topic":"מבחן Deviance (LRT)","description":"השוואת מודלים לוגיסטיים"},
+    {"exam":"2024ב מועד א","question":3,"sub":"א","points":15,"main_topic":"רגרסיה מרובה","specific_topic":"גאוס-מרקוב","description":"הוכחת BLUE"},
+    {"exam":"2024ב מועד א","question":3,"sub":"ב","points":13,"main_topic":"רגרסיה מרובה","specific_topic":"הטיית משתנה מושמט (OVB)","description":"חישוב הטיה"},
+    # === 2023 מועד א ===
+    {"exam":"2023 מועד א","question":1,"sub":"א","points":15,"main_topic":"רגרסיה מרובה","specific_topic":"פלט R / פרשנות","description":"קריאת פלט R"},
+    {"exam":"2023 מועד א","question":1,"sub":"ב","points":15,"main_topic":"רגרסיה מרובה","specific_topic":"מבחן F חלקי","description":"השוואת מודלים"},
+    {"exam":"2023 מועד א","question":1,"sub":"ג","points":10,"main_topic":"בחירת מודלים","specific_topic":"AIC/BIC","description":"בחירת מודל"},
+    {"exam":"2023 מועד א","question":2,"sub":"א","points":10,"main_topic":"דיאגנוסטיקה","specific_topic":"הטרוסקדסטיות","description":"זיהוי מתרשים"},
+    {"exam":"2023 מועד א","question":2,"sub":"ב","points":10,"main_topic":"דיאגנוסטיקה","specific_topic":"חוסר לינאריות","description":"תרשים שאריות פרבולי"},
+    {"exam":"2023 מועד א","question":2,"sub":"ג","points":10,"main_topic":"דיאגנוסטיקה","specific_topic":"מבחן פרמוטציה","description":"מבחן אפרמטרי"},
+    {"exam":"2023 מועד א","question":2,"sub":"ד","points":10,"main_topic":"דיאגנוסטיקה","specific_topic":"מבחן פרמוטציה","description":"חישוב p-value"},
+    {"exam":"2023 מועד א","question":3,"sub":"א","points":10,"main_topic":"רגרסיה פשוטה","specific_topic":"OLS ללא חותך","description":"אומד שיפוע ללא חותך"},
+    {"exam":"2023 מועד א","question":3,"sub":"ב","points":8,"main_topic":"רגרסיה פשוטה","specific_topic":"R² שלילי","description":"R² שלילי ללא חותך"},
+    # === 2023 מועד ב ===
+    {"exam":"2023 מועד ב","question":1,"sub":"א","points":10,"main_topic":"רגרסיה מרובה","specific_topic":"פלט R / פרשנות","description":"קריאת פלט"},
+    {"exam":"2023 מועד ב","question":1,"sub":"ב","points":10,"main_topic":"רגרסיה מרובה","specific_topic":"מבחן F כללי","description":"מובהקות"},
+    {"exam":"2023 מועד ב","question":2,"sub":"א","points":10,"main_topic":"דיאגנוסטיקה","specific_topic":"פרדוקס סימפסון","description":"קשר חיובי שנהפך כיוון","description":"קשר חיובי שהופך שלילי"},
+    {"exam":"2023 מועד ב","question":2,"sub":"ב","points":10,"main_topic":"אינטראקציות וטרנספורמציות","specific_topic":"משתנים קטגוריאליים","description":"הוספת משתנה קטגורי"},
+    {"exam":"2023 מועד ב","question":2,"sub":"ג","points":20,"main_topic":"דיאגנוסטיקה","specific_topic":"הטרוסקדסטיות","description":"בדיקה וטיפול"},
+    {"exam":"2023 מועד ב","question":3,"sub":"א","points":20,"main_topic":"דיאגנוסטיקה","specific_topic":"מולטיקולינאריות","description":"הסבר אינטואיטיבי מאיור"},
+    {"exam":"2023 מועד ב","question":3,"sub":"ב","points":10,"main_topic":"דיאגנוסטיקה","specific_topic":"מולטיקולינאריות","description":"בדיקה ב-4 משתנים"},
+    # === 2024א מועד ב ===
+    {"exam":"2024א מועד ב","question":1,"sub":"א","points":10,"main_topic":"רגרסיה פשוטה","specific_topic":"שינוי יחידות","description":"השפעת שינוי יחידות על אומדים"},
+    {"exam":"2024א מועד ב","question":1,"sub":"ב","points":10,"main_topic":"המודל הנורמלי","specific_topic":"רווח סמך לשיפוע","description":"CI לשיפוע"},
+    {"exam":"2024א מועד ב","question":1,"sub":"ג","points":10,"main_topic":"רגרסיה מרובה","specific_topic":"מבחן F חלקי","description":"F חלקי"},
+    {"exam":"2024א מועד ב","question":2,"sub":"א","points":20,"main_topic":"רגרסיה לוגיסטית","specific_topic":"כתיבת מודל לוגיסטי","description":"כתיבת מודל"},
+    {"exam":"2024א מועד ב","question":2,"sub":"ב","points":10,"main_topic":"רגרסיה לוגיסטית","specific_topic":"שיפוע מקסימלי","description":"נקודת חצי ושיפוע"},
+    {"exam":"2024א מועד ב","question":3,"sub":"א","points":15,"main_topic":"רגרסיה מרובה","specific_topic":"גאוס-מרקוב","description":"BLUE"},
+    {"exam":"2024א מועד ב","question":3,"sub":"ב","points":13,"main_topic":"בחירת מודלים","specific_topic":"Cross-Validation","description":"LOOCV"},
+    # === 2024ב מועד ב ===
+    {"exam":"2024ב מועד ב","question":1,"sub":"א","points":10,"main_topic":"רגרסיה מרובה","specific_topic":"פלט R / פרשנות","description":"פלט R"},
+    {"exam":"2024ב מועד ב","question":1,"sub":"ב","points":10,"main_topic":"רגרסיה מרובה","specific_topic":"R²adj / השוואת מודלים","description":"R²adj"},
+    {"exam":"2024ב מועד ב","question":1,"sub":"ג","points":10,"main_topic":"המודל הנורמלי","specific_topic":"רווח סמך למקדם","description":"CI"},
+    {"exam":"2024ב מועד ב","question":2,"sub":"א","points":15,"main_topic":"רגרסיה לוגיסטית","specific_topic":"Odds Ratio","description":"OR ופרשנות"},
+    {"exam":"2024ב מועד ב","question":2,"sub":"ב","points":15,"main_topic":"רגרסיה לוגיסטית","specific_topic":"מבחן Deviance (LRT)","description":"Deviance"},
+    {"exam":"2024ב מועד ב","question":3,"sub":"א","points":20,"main_topic":"רגרסיה מרובה","specific_topic":"הטיית משתנה מושמט (OVB)","description":"OVB + שונות"},
+    {"exam":"2024ב מועד ב","question":3,"sub":"ב","points":10,"main_topic":"רגרסיה מרובה","specific_topic":"שונות מוגברת","description":"שונות מהוספת משתנה מיותר"},
+    # === 2025ב מועד ב ===
+    {"exam":"2025ב מועד ב","question":1,"sub":"א","points":10,"main_topic":"רגרסיה מרובה","specific_topic":"פלט R / פרשנות","description":"פלט R"},
+    {"exam":"2025ב מועד ב","question":1,"sub":"ב","points":15,"main_topic":"רגרסיה מרובה","specific_topic":"מבחן F חלקי","description":"F חלקי"},
+    {"exam":"2025ב מועד ב","question":1,"sub":"ג","points":10,"main_topic":"המודל הנורמלי","specific_topic":"רווח סמך למקדם","description":"CI"},
+    {"exam":"2025ב מועד ב","question":2,"sub":"א","points":15,"main_topic":"דיאגנוסטיקה","specific_topic":"Leverage / Cook","description":"חריגים והנפה"},
+    {"exam":"2025ב מועד ב","question":2,"sub":"ב","points":15,"main_topic":"דיאגנוסטיקה","specific_topic":"הטרוסקדסטיות","description":"זיהוי וטיפול"},
+    {"exam":"2025ב מועד ב","question":3,"sub":"א","points":18,"main_topic":"בחירת מודלים","specific_topic":"אופטימיות / Cp","description":"אופטימיות ותיקון"},
+]
+
+# Write to classified_questions.json
+output = {"exam_questions": questions}
+with open("classified_questions.json", "w", encoding="utf-8") as f:
+    json.dump(output, f, ensure_ascii=False, indent=2)
+
+print(f"Written {len(questions)} classified questions to classified_questions.json")
