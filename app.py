@@ -31,6 +31,9 @@ def lc(): return json.load(open("data/classified_questions.json","r",encoding="u
 def lf(): return json.load(open("data/classified_formulas.json","r",encoding="utf-8"))
 
 data=ld(); classified=lc(); formulas_db=lf()
+@st.cache_data
+def ls(): return json.load(open("data/topic_summaries.json","r",encoding="utf-8"))
+summaries=ls()
 if "progress" not in st.session_state: st.session_state.progress={t["name"]:False for t in data["topics"]}
 if "qa" not in st.session_state: st.session_state.qa=0
 if "page" not in st.session_state: st.session_state.page="ראשי"
@@ -46,6 +49,7 @@ with st.sidebar:
         ("🗂️", "סיווג שאלות"),
         ("📐", "נוסחאות"),
         ("✍️", "תרגול"),
+        ("📖", "סיכום נושאים"),
         ("📈", "מעקב"),
     ]
     
@@ -117,6 +121,11 @@ elif page=="סיווג שאלות":
     if sel_spec != "הכל":
         qs_filtered = [q for q in qs_filtered if q["specific_topic"] == sel_spec]
     
+    # Difficulty filter
+    sel_diff = st.selectbox("🔍 רמת קושי:", ["הכל", "קל", "בינוני", "קשה"])
+    if sel_diff != "הכל":
+        qs_filtered = [q for q in qs_filtered if q.get("difficulty") == sel_diff]
+    
     st.markdown(f"### {len(qs_filtered)} שאלות נמצאו")
     st.markdown("---")
     
@@ -173,6 +182,30 @@ elif page=="תרגול":
             if st.button("📖 פתרון",key=f"s{i}"): st.success(q["a"]); st.session_state.qa+=1
 
 # ========== TRACKING ==========
+elif page=="סיכום נושאים":
+    st.title("📖 סיכום לפי נושא")
+    st.caption("לכל נושא: נוסחאות, טיפים, ומלכודות נפוצות")
+    st.markdown("---")
+    sel_topic = st.selectbox("בחר נושא:", list(summaries.keys()))
+    s = summaries[sel_topic]
+    st.subheader(f"📐 נוסחאות – {sel_topic}")
+    for f in s["formulas"]:
+        st.code(f, language=None)
+    st.subheader("💡 טיפים")
+    for t in s["tips"]:
+        st.success(t)
+    st.subheader("⚠️ מלכודות נפוצות")
+    for t in s["traps"]:
+        st.error(t)
+    # Show related exam questions
+    st.markdown("---")
+    st.subheader("📝 שאלות לדוגמה מהמבחנים")
+    related = [q for q in classified["exam_questions"] if q["main_topic"]==sel_topic][:5]
+    for q in related:
+        st.write(f"• **{q['exam']}** ש{q['question']}{q['sub']}: {q['description']}")
+        if q.get("solution"):
+            st.caption(f"   💡 {q['solution']}")
+
 elif page=="מעקב":
     st.title("📈 מעקב התקדמות")
     st.caption("סמן נושאים שלמדת")

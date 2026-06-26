@@ -7,7 +7,10 @@
       "points": 10,
       "main_topic": "רגרסיה מרובה",
       "specific_topic": "רווח סמך למקדם",
-      "description": "רווח סמך 99% עבור מקדם x1"
+      "description": "רווח סמך 99% עבור מקדם x1",
+      "difficulty": "בינוני",
+      "file": "exams/מבחנים משנים קודמות-20260626/מבחני 2024 2025/מבחן ברגרסיה 2025ב מועד א  עם פתרון.pdf",
+      "solution": "CI = β̂₁ ± t(0.005,57)·SE = -0.478 ± 2.66×0.34 = [-1.385, 0.429]"
     },
     {
       "exam": "2025ב מועד א",
@@ -16,7 +19,10 @@
       "points": 10,
       "main_topic": "רגרסיה מרובה",
       "specific_topic": "מבחן F כללי",
-      "description": "מובהקות הרגרסיה ברמה 5%"
+      "description": "מובהקות הרגרסיה ברמה 5%",
+      "difficulty": "בינוני",
+      "file": "exams/מבחנים משנים קודמות-20260626/מבחני 2024 2025/מבחן ברגרסיה 2025ב מועד א  עם פתרון.pdf",
+      "solution": "F=31.92, F_crit(4,57)≈2.53. 31.92>2.53 → נדחה H₀, מובהק"
     },
     {
       "exam": "2025ב מועד א",
@@ -25,7 +31,10 @@
       "points": 15,
       "main_topic": "רגרסיה מרובה",
       "specific_topic": "מבחן t שולי",
-      "description": "דירוג מקדמים לפי מובהקות"
+      "description": "דירוג מקדמים לפי מובהקות",
+      "difficulty": "קשה",
+      "file": "exams/מבחנים משנים קודמות-20260626/מבחני 2024 2025/מבחן ברגרסיה 2025ב מועד א  עם פתרון.pdf",
+      "solution": ""
     },
     {
       "exam": "2025ב מועד א",
@@ -34,7 +43,10 @@
       "points": 7,
       "main_topic": "רגרסיה מרובה",
       "specific_topic": "פרשנות מקדמים",
-      "description": "הסבר ממצאי מודל פשוט"
+      "description": "הסבר ממצאי מודל פשוט",
+      "difficulty": "קל",
+      "file": "exams/מבחנים משנים קודמות-20260626/מבחני 2024 2025/מבחן ברגרסיה 2025ב מועד א  עם פתרון.pdf",
+      "solution": ""
     },
     {
       "exam": "2025ב מועד א",
@@ -43,7 +55,10 @@
       "points": 8,
       "main_topic": "אינטראקציות וטרנספורמציות",
       "specific_topic": "משתני דמה",
-      "description": "פרשנות מודל עם משתנה בינארי"
+      "description": "פרשנות מודל עם משתנה בינארי",
+      "difficulty": "קל",
+      "file": "exams/מבחנים משנים קודמות-20260626/מבחני 2024 2025/מבחן ברגרסיה 2025ב מועד א  עם פתרון.pdf",
+      "solution": ""
     },
     {
       "exam": "2025ב מועד א",
@@ -52,7 +67,10 @@
       "points": 15,
       "main_topic": "אינטראקציות וטרנספורמציות",
       "specific_topic": "פרדוקס סימפסון",
-      "description": "סתירה בין מודלים"
+      "description": "סתירה בין מודלים",
+      "difficulty": "קשה",
+      "file": "exams/מבחנים משנים קודמות-20260626/מבחני 2024 2025/מבחן ברגרסיה 2025ב מועד א  עם פתרון.pdf",
+      "solution": ""
     },
     {
       "exam": "2025ב מועד א",
@@ -61,7 +79,10 @@
       "points": 15,
       "main_topic": "אינטראקציות וטרנספורמציות",
       "specific_topic": "אינטראקציות",
-      "description": "עקביות מודל אינטראקציה"
+      "description": "עקביות מודל אינטראקציה",
+      "difficulty": "קשה",
+      "file": "exams/מבחנים משנים קודמות-20260626/מבחני 2024 2025/מבחן ברגרסיה 2025ב מועד א  עם פתרון.pdf",
+      "solution": ""
     },
     {
       "exam": "2025ב מועד א",
@@ -70,7 +91,10 @@
       "points": 5,
       "main_topic": "רגרסיה מרובה",
       "specific_topic": "הטיית משתנה מושמט (OVB)",
-      "description": "חסרות הטיה בהשמטת משתנה"
+      "description": "חסרות הטיה בהשמטת משתנה",
+      "difficulty": "קל",
+      "file": "exams/מבחנים משנים קודמות-20260626/מבחני 2024 2025/מבחן ברגרסיה 2025ב מועד א  עם פתרון.pdf",
+      "solution": ""
     },
     {
       "exam": "2025ב מועד א",
@@ -79,7 +103,10 @@
       "points": 13,
       "main_topic": "רגרסיה מרובה",
       "specific_topic": "הטיית משתנה מושמט (OVB)",
-      "description": "חישוב ההטיה בעזרת Cov"
+      "description": "חישוב ההטיה בעזרת Cov",
+      "difficulty": "בינוני",
+      "file": "exams/מבחנים משנים קודמות-20260626/מבחני 2024 2025/מבחן ברגרסיה 2025ב מועד א  עם פתרון.pdf",
+      "solution": "Bias = β₂·Cov(X₁,X₂)/Var(X₁)"
     },
     {
       "exam": "2025א מועד א",
@@ -88,7 +115,10 @@
       "points": 10,
       "main_topic": "רגרסיה מרובה",
       "specific_topic": "R²adj / השוואת מודלים",
-      "description": "השוואה בין מודלים"
+      "description": "השוואה בין מודלים",
+      "difficulty": "בינוני",
+      "file": "exams/מבחן ברגרסיה 2025א מועד א פתרון.docx",
+      "solution": "R²adj(דני)=0.915, R²adj(רונית)=0.759 → דני עדיף"
     },
     {
       "exam": "2025א מועד א",
@@ -97,7 +127,10 @@
       "points": 10,
       "main_topic": "רגרסיה פשוטה",
       "specific_topic": "חישוב אומדי OLS",
-      "description": "חישוב OLS וסכומי ריבועים"
+      "description": "חישוב OLS וסכומי ריבועים",
+      "difficulty": "בינוני",
+      "file": "exams/מבחן ברגרסיה 2025א מועד א פתרון.docx",
+      "solution": ""
     },
     {
       "exam": "2025א מועד א",
@@ -106,7 +139,10 @@
       "points": 10,
       "main_topic": "רגרסיה מרובה",
       "specific_topic": "מבחן F חלקי",
-      "description": "F חלקי בין מודלים מקוננים"
+      "description": "F חלקי בין מודלים מקוננים",
+      "difficulty": "בינוני",
+      "file": "exams/מבחן ברגרסיה 2025א מועד א פתרון.docx",
+      "solution": "F = (SSE_עידו-SSE_רונית)/1 / MSE_רונית → נדחה H₀"
     },
     {
       "exam": "2025א מועד א",
@@ -115,7 +151,10 @@
       "points": 10,
       "main_topic": "רגרסיה מרובה",
       "specific_topic": "פרשנות מקדמים",
-      "description": "בעיית יחידות"
+      "description": "בעיית יחידות",
+      "difficulty": "בינוני",
+      "file": "exams/מבחן ברגרסיה 2025א מועד א פתרון.docx",
+      "solution": ""
     },
     {
       "exam": "2025א מועד א",
@@ -124,7 +163,10 @@
       "points": 10,
       "main_topic": "דיאגנוסטיקה",
       "specific_topic": "תרשימי שאריות",
-      "description": "תרשים שאריות פרבולי"
+      "description": "תרשים שאריות פרבולי",
+      "difficulty": "בינוני",
+      "file": "exams/מבחן ברגרסיה 2025א מועד א פתרון.docx",
+      "solution": ""
     },
     {
       "exam": "2025א מועד א",
@@ -133,7 +175,10 @@
       "points": 15,
       "main_topic": "דיאגנוסטיקה",
       "specific_topic": "חוסר לינאריות",
-      "description": "שאריות פרבוליות ומונוטוניות"
+      "description": "שאריות פרבוליות ומונוטוניות",
+      "difficulty": "קשה",
+      "file": "exams/מבחן ברגרסיה 2025א מועד א פתרון.docx",
+      "solution": "לא בהכרח. קשר מונוטוני כמו log יכול גם לתת שאריות פרבוליות"
     },
     {
       "exam": "2025א מועד א",
@@ -142,7 +187,10 @@
       "points": 14,
       "main_topic": "אינטראקציות וטרנספורמציות",
       "specific_topic": "טרנספורמציות",
-      "description": "תיקון חוסר לינאריות"
+      "description": "תיקון חוסר לינאריות",
+      "difficulty": "קשה",
+      "file": "exams/מבחן ברגרסיה 2025א מועד א פתרון.docx",
+      "solution": ""
     },
     {
       "exam": "2025א מועד א",
@@ -151,7 +199,10 @@
       "points": 7,
       "main_topic": "רגרסיה מרובה",
       "specific_topic": "גאוס-מרקוב",
-      "description": "OLS חסר הטיה עם שונויות לא שוות"
+      "description": "OLS חסר הטיה עם שונויות לא שוות",
+      "difficulty": "קל",
+      "file": "exams/מבחן ברגרסיה 2025א מועד א פתרון.docx",
+      "solution": ""
     },
     {
       "exam": "2025א מועד א",
@@ -160,7 +211,10 @@
       "points": 7,
       "main_topic": "רגרסיה מרובה",
       "specific_topic": "WLS",
-      "description": "שונות האומד החדש"
+      "description": "שונות האומד החדש",
+      "difficulty": "קל",
+      "file": "exams/מבחן ברגרסיה 2025א מועד א פתרון.docx",
+      "solution": ""
     },
     {
       "exam": "2025א מועד א",
@@ -169,7 +223,10 @@
       "points": 15,
       "main_topic": "רגרסיה מרובה",
       "specific_topic": "גאוס-מרקוב מוכלל",
-      "description": "הוכחה WLS טוב מOLS"
+      "description": "הוכחה WLS טוב מOLS",
+      "difficulty": "קשה",
+      "file": "exams/מבחן ברגרסיה 2025א מועד א פתרון.docx",
+      "solution": ""
     },
     {
       "exam": "2025א מועד ב",
@@ -178,7 +235,10 @@
       "points": 13,
       "main_topic": "רגרסיה פשוטה",
       "specific_topic": "חישוב אומדי OLS",
-      "description": "אמידת האפס המוחלט"
+      "description": "אמידת האפס המוחלט",
+      "difficulty": "בינוני",
+      "file": "exams/מבחן ברגרסיה 2025א מועד ב - פיתרון.docx",
+      "solution": "β̂₀ = ȳ - β̂₁·x̄ (החותך = האפס המוחלט)"
     },
     {
       "exam": "2025א מועד ב",
@@ -187,7 +247,10 @@
       "points": 13,
       "main_topic": "המודל הנורמלי",
       "specific_topic": "רווח סמך לחותך",
-      "description": "CI 95% לאפס המוחלט"
+      "description": "CI 95% לאפס המוחלט",
+      "difficulty": "בינוני",
+      "file": "exams/מבחן ברגרסיה 2025א מועד ב - פיתרון.docx",
+      "solution": "β̂₀ ± t(0.025,n-2)·SE(β̂₀)"
     },
     {
       "exam": "2025א מועד ב",
@@ -196,7 +259,10 @@
       "points": 13,
       "main_topic": "המודל הנורמלי",
       "specific_topic": "רווח חיזוי (prediction)",
-      "description": "הסתברות תצפית חדשה ברווח"
+      "description": "הסתברות תצפית חדשה ברווח",
+      "difficulty": "בינוני",
+      "file": "exams/מבחן ברגרסיה 2025א מועד ב - פיתרון.docx",
+      "solution": "PI רחב יותר מCI כי מוסיפים σ² נוסף. ההסתברות בין 0.9-0.95"
     },
     {
       "exam": "2025א מועד ב",
@@ -205,7 +271,10 @@
       "points": 13,
       "main_topic": "דיאגנוסטיקה",
       "specific_topic": "תרשימי שאריות",
-      "description": "שרטוט שאריות מול x"
+      "description": "שרטוט שאריות מול x",
+      "difficulty": "בינוני",
+      "file": "exams/מבחן ברגרסיה 2025א מועד ב - פיתרון.docx",
+      "solution": ""
     },
     {
       "exam": "2025א מועד ב",
@@ -214,7 +283,10 @@
       "points": 13,
       "main_topic": "דיאגנוסטיקה",
       "specific_topic": "תרשימי שאריות",
-      "description": "שאריות מול ערים"
+      "description": "שאריות מול ערים",
+      "difficulty": "בינוני",
+      "file": "exams/מבחן ברגרסיה 2025א מועד ב - פיתרון.docx",
+      "solution": ""
     },
     {
       "exam": "2025א מועד ב",
@@ -223,7 +295,10 @@
       "points": 13,
       "main_topic": "אינטראקציות וטרנספורמציות",
       "specific_topic": "משתנים קטגוריאליים",
-      "description": "מודל עם דמה לערים"
+      "description": "מודל עם דמה לערים",
+      "difficulty": "בינוני",
+      "file": "exams/מבחן ברגרסיה 2025א מועד ב - פיתרון.docx",
+      "solution": ""
     },
     {
       "exam": "2025א מועד ב",
@@ -232,7 +307,10 @@
       "points": 15,
       "main_topic": "רגרסיה מרובה",
       "specific_topic": "WLS",
-      "description": "WLS לציונים בבתי ספר"
+      "description": "WLS לציונים בבתי ספר",
+      "difficulty": "קשה",
+      "file": "exams/מבחן ברגרסיה 2025א מועד ב - פיתרון.docx",
+      "solution": ""
     },
     {
       "exam": "2025א מועד ב",
@@ -241,7 +319,10 @@
       "points": 15,
       "main_topic": "רגרסיה מרובה",
       "specific_topic": "WLS",
-      "description": "σ² לא ידוע"
+      "description": "σ² לא ידוע",
+      "difficulty": "קשה",
+      "file": "exams/מבחן ברגרסיה 2025א מועד ב - פיתרון.docx",
+      "solution": ""
     },
     {
       "exam": "2024א מועד א",
@@ -250,7 +331,10 @@
       "points": 10,
       "main_topic": "רגרסיה פשוטה",
       "specific_topic": "חישוב אומדי OLS",
-      "description": "חישוב אומדים"
+      "description": "חישוב אומדים",
+      "difficulty": "בינוני",
+      "file": "exams/מבחנים משנים קודמות-20260626/מבחני 2024 2025/מבחן ברגרסיה 2024א מועד א פיתרון3.pdf",
+      "solution": ""
     },
     {
       "exam": "2024א מועד א",
@@ -259,7 +343,10 @@
       "points": 10,
       "main_topic": "המודל הנורמלי",
       "specific_topic": "רווח סמך לשיפוע",
-      "description": "CI 95% לשיפוע"
+      "description": "CI 95% לשיפוע",
+      "difficulty": "בינוני",
+      "file": "exams/מבחנים משנים קודמות-20260626/מבחני 2024 2025/מבחן ברגרסיה 2024א מועד א פיתרון3.pdf",
+      "solution": ""
     },
     {
       "exam": "2024א מועד א",
@@ -268,7 +355,10 @@
       "points": 10,
       "main_topic": "רגרסיה פשוטה",
       "specific_topic": "R²",
-      "description": "חישוב R²"
+      "description": "חישוב R²",
+      "difficulty": "בינוני",
+      "file": "exams/מבחנים משנים קודמות-20260626/מבחני 2024 2025/מבחן ברגרסיה 2024א מועד א פיתרון3.pdf",
+      "solution": ""
     },
     {
       "exam": "2024א מועד א",
@@ -277,7 +367,10 @@
       "points": 10,
       "main_topic": "רגרסיה מרובה",
       "specific_topic": "מבחן F חלקי",
-      "description": "השוואת מודלים"
+      "description": "השוואת מודלים",
+      "difficulty": "בינוני",
+      "file": "exams/מבחנים משנים קודמות-20260626/מבחני 2024 2025/מבחן ברגרסיה 2024א מועד א פיתרון3.pdf",
+      "solution": ""
     },
     {
       "exam": "2024א מועד א",
@@ -286,7 +379,10 @@
       "points": 15,
       "main_topic": "דיאגנוסטיקה",
       "specific_topic": "מולטיקולינאריות",
-      "description": "זיהוי מולטיקולינאריות"
+      "description": "זיהוי מולטיקולינאריות",
+      "difficulty": "קשה",
+      "file": "exams/מבחנים משנים קודמות-20260626/מבחני 2024 2025/מבחן ברגרסיה 2024א מועד א פיתרון3.pdf",
+      "solution": ""
     },
     {
       "exam": "2024א מועד א",
@@ -295,7 +391,10 @@
       "points": 15,
       "main_topic": "דיאגנוסטיקה",
       "specific_topic": "תרשימי שאריות",
-      "description": "פרשנות תרשימים"
+      "description": "פרשנות תרשימים",
+      "difficulty": "קשה",
+      "file": "exams/מבחנים משנים קודמות-20260626/מבחני 2024 2025/מבחן ברגרסיה 2024א מועד א פיתרון3.pdf",
+      "solution": ""
     },
     {
       "exam": "2024א מועד א",
@@ -304,7 +403,10 @@
       "points": 9,
       "main_topic": "רגרסיה מרובה",
       "specific_topic": "הטיית משתנה מושמט (OVB)",
-      "description": "הטיה מהשמטת משתנה"
+      "description": "הטיה מהשמטת משתנה",
+      "difficulty": "בינוני",
+      "file": "exams/מבחנים משנים קודמות-20260626/מבחני 2024 2025/מבחן ברגרסיה 2024א מועד א פיתרון3.pdf",
+      "solution": ""
     },
     {
       "exam": "2024א מועד א",
@@ -313,7 +415,10 @@
       "points": 9,
       "main_topic": "נתונים חסרים ושגיאת מדידה",
       "specific_topic": "שגיאת מדידה (Attenuation)",
-      "description": "Attenuation bias"
+      "description": "Attenuation bias",
+      "difficulty": "בינוני",
+      "file": "exams/מבחנים משנים קודמות-20260626/מבחני 2024 2025/מבחן ברגרסיה 2024א מועד א פיתרון3.pdf",
+      "solution": ""
     },
     {
       "exam": "2024ב מועד א",
@@ -322,7 +427,10 @@
       "points": 10,
       "main_topic": "רגרסיה מרובה",
       "specific_topic": "פלט R / פרשנות",
-      "description": "קריאת פלט R"
+      "description": "קריאת פלט R",
+      "difficulty": "בינוני",
+      "file": "exams/מבחנים משנים קודמות-20260626/מבחני 2024 2025/מבחן ברגרסיה 2024ב מועד א פיתרון.pdf",
+      "solution": ""
     },
     {
       "exam": "2024ב מועד א",
@@ -331,7 +439,10 @@
       "points": 10,
       "main_topic": "רגרסיה מרובה",
       "specific_topic": "מבחן F כללי",
-      "description": "מובהקות כללית"
+      "description": "מובהקות כללית",
+      "difficulty": "בינוני",
+      "file": "exams/מבחנים משנים קודמות-20260626/מבחני 2024 2025/מבחן ברגרסיה 2024ב מועד א פיתרון.pdf",
+      "solution": ""
     },
     {
       "exam": "2024ב מועד א",
@@ -340,7 +451,10 @@
       "points": 10,
       "main_topic": "המודל הנורמלי",
       "specific_topic": "רווח סמך למקדם",
-      "description": "CI למקדם"
+      "description": "CI למקדם",
+      "difficulty": "בינוני",
+      "file": "exams/מבחנים משנים קודמות-20260626/מבחני 2024 2025/מבחן ברגרסיה 2024ב מועד א פיתרון.pdf",
+      "solution": ""
     },
     {
       "exam": "2024ב מועד א",
@@ -349,7 +463,10 @@
       "points": 20,
       "main_topic": "רגרסיה לוגיסטית",
       "specific_topic": "כתיבת מודל לוגיסטי",
-      "description": "ביטוי π(x) ופרשנות"
+      "description": "ביטוי π(x) ופרשנות",
+      "difficulty": "קשה",
+      "file": "exams/מבחנים משנים קודמות-20260626/מבחני 2024 2025/מבחן ברגרסיה 2024ב מועד א פיתרון.pdf",
+      "solution": ""
     },
     {
       "exam": "2024ב מועד א",
@@ -358,7 +475,10 @@
       "points": 10,
       "main_topic": "רגרסיה לוגיסטית",
       "specific_topic": "Odds Ratio",
-      "description": "חישוב OR"
+      "description": "חישוב OR",
+      "difficulty": "בינוני",
+      "file": "exams/מבחנים משנים קודמות-20260626/מבחני 2024 2025/מבחן ברגרסיה 2024ב מועד א פיתרון.pdf",
+      "solution": ""
     },
     {
       "exam": "2024ב מועד א",
@@ -367,7 +487,10 @@
       "points": 10,
       "main_topic": "רגרסיה לוגיסטית",
       "specific_topic": "מבחן Deviance (LRT)",
-      "description": "השוואת מודלים לוגיסטיים"
+      "description": "השוואת מודלים לוגיסטיים",
+      "difficulty": "בינוני",
+      "file": "exams/מבחנים משנים קודמות-20260626/מבחני 2024 2025/מבחן ברגרסיה 2024ב מועד א פיתרון.pdf",
+      "solution": ""
     },
     {
       "exam": "2024ב מועד א",
@@ -376,7 +499,10 @@
       "points": 15,
       "main_topic": "רגרסיה מרובה",
       "specific_topic": "גאוס-מרקוב",
-      "description": "הוכחת BLUE"
+      "description": "הוכחת BLUE",
+      "difficulty": "קשה",
+      "file": "exams/מבחנים משנים קודמות-20260626/מבחני 2024 2025/מבחן ברגרסיה 2024ב מועד א פיתרון.pdf",
+      "solution": ""
     },
     {
       "exam": "2024ב מועד א",
@@ -385,7 +511,10 @@
       "points": 13,
       "main_topic": "רגרסיה מרובה",
       "specific_topic": "הטיית משתנה מושמט (OVB)",
-      "description": "חישוב הטיה"
+      "description": "חישוב הטיה",
+      "difficulty": "בינוני",
+      "file": "exams/מבחנים משנים קודמות-20260626/מבחני 2024 2025/מבחן ברגרסיה 2024ב מועד א פיתרון.pdf",
+      "solution": ""
     },
     {
       "exam": "2023 מועד א",
@@ -394,7 +523,10 @@
       "points": 15,
       "main_topic": "רגרסיה מרובה",
       "specific_topic": "פלט R / פרשנות",
-      "description": "קריאת פלט R"
+      "description": "קריאת פלט R",
+      "difficulty": "קשה",
+      "file": "exams/מבחנים משנים קודמות-20260626/2023/2023AA_Sol.docx",
+      "solution": ""
     },
     {
       "exam": "2023 מועד א",
@@ -403,7 +535,10 @@
       "points": 15,
       "main_topic": "רגרסיה מרובה",
       "specific_topic": "מבחן F חלקי",
-      "description": "השוואת מודלים"
+      "description": "השוואת מודלים",
+      "difficulty": "קשה",
+      "file": "exams/מבחנים משנים קודמות-20260626/2023/2023AA_Sol.docx",
+      "solution": ""
     },
     {
       "exam": "2023 מועד א",
@@ -412,7 +547,10 @@
       "points": 10,
       "main_topic": "בחירת מודלים",
       "specific_topic": "AIC/BIC",
-      "description": "בחירת מודל"
+      "description": "בחירת מודל",
+      "difficulty": "בינוני",
+      "file": "exams/מבחנים משנים קודמות-20260626/2023/2023AA_Sol.docx",
+      "solution": ""
     },
     {
       "exam": "2023 מועד א",
@@ -421,7 +559,10 @@
       "points": 10,
       "main_topic": "דיאגנוסטיקה",
       "specific_topic": "הטרוסקדסטיות",
-      "description": "זיהוי מתרשים"
+      "description": "זיהוי מתרשים",
+      "difficulty": "בינוני",
+      "file": "exams/מבחנים משנים קודמות-20260626/2023/2023AA_Sol.docx",
+      "solution": ""
     },
     {
       "exam": "2023 מועד א",
@@ -430,7 +571,10 @@
       "points": 10,
       "main_topic": "דיאגנוסטיקה",
       "specific_topic": "חוסר לינאריות",
-      "description": "תרשים שאריות פרבולי"
+      "description": "תרשים שאריות פרבולי",
+      "difficulty": "בינוני",
+      "file": "exams/מבחנים משנים קודמות-20260626/2023/2023AA_Sol.docx",
+      "solution": ""
     },
     {
       "exam": "2023 מועד א",
@@ -439,7 +583,10 @@
       "points": 10,
       "main_topic": "דיאגנוסטיקה",
       "specific_topic": "מבחן פרמוטציה",
-      "description": "מבחן אפרמטרי"
+      "description": "מבחן אפרמטרי",
+      "difficulty": "בינוני",
+      "file": "exams/מבחנים משנים קודמות-20260626/2023/2023AA_Sol.docx",
+      "solution": ""
     },
     {
       "exam": "2023 מועד א",
@@ -448,7 +595,10 @@
       "points": 10,
       "main_topic": "דיאגנוסטיקה",
       "specific_topic": "מבחן פרמוטציה",
-      "description": "חישוב p-value"
+      "description": "חישוב p-value",
+      "difficulty": "בינוני",
+      "file": "exams/מבחנים משנים קודמות-20260626/2023/2023AA_Sol.docx",
+      "solution": ""
     },
     {
       "exam": "2023 מועד א",
@@ -457,7 +607,10 @@
       "points": 10,
       "main_topic": "רגרסיה פשוטה",
       "specific_topic": "OLS ללא חותך",
-      "description": "אומד שיפוע ללא חותך"
+      "description": "אומד שיפוע ללא חותך",
+      "difficulty": "בינוני",
+      "file": "exams/מבחנים משנים קודמות-20260626/2023/2023AA_Sol.docx",
+      "solution": ""
     },
     {
       "exam": "2023 מועד א",
@@ -466,7 +619,10 @@
       "points": 8,
       "main_topic": "רגרסיה פשוטה",
       "specific_topic": "R² שלילי",
-      "description": "R² שלילי ללא חותך"
+      "description": "R² שלילי ללא חותך",
+      "difficulty": "קל",
+      "file": "exams/מבחנים משנים קודמות-20260626/2023/2023AA_Sol.docx",
+      "solution": ""
     },
     {
       "exam": "2023 מועד ב",
@@ -475,7 +631,10 @@
       "points": 10,
       "main_topic": "רגרסיה מרובה",
       "specific_topic": "פלט R / פרשנות",
-      "description": "קריאת פלט"
+      "description": "קריאת פלט",
+      "difficulty": "בינוני",
+      "file": "exams/מבחנים משנים קודמות-20260626/2023/מבחן 2023ב מועד ב פיתרון.pdf",
+      "solution": ""
     },
     {
       "exam": "2023 מועד ב",
@@ -484,7 +643,10 @@
       "points": 10,
       "main_topic": "רגרסיה מרובה",
       "specific_topic": "מבחן F כללי",
-      "description": "מובהקות"
+      "description": "מובהקות",
+      "difficulty": "בינוני",
+      "file": "exams/מבחנים משנים קודמות-20260626/2023/מבחן 2023ב מועד ב פיתרון.pdf",
+      "solution": ""
     },
     {
       "exam": "2023 מועד ב",
@@ -493,7 +655,10 @@
       "points": 10,
       "main_topic": "דיאגנוסטיקה",
       "specific_topic": "פרדוקס סימפסון",
-      "description": "קשר חיובי שהופך שלילי"
+      "description": "קשר חיובי שהופך שלילי",
+      "difficulty": "בינוני",
+      "file": "exams/מבחנים משנים קודמות-20260626/2023/מבחן 2023ב מועד ב פיתרון.pdf",
+      "solution": ""
     },
     {
       "exam": "2023 מועד ב",
@@ -502,7 +667,10 @@
       "points": 10,
       "main_topic": "אינטראקציות וטרנספורמציות",
       "specific_topic": "משתנים קטגוריאליים",
-      "description": "הוספת משתנה קטגורי"
+      "description": "הוספת משתנה קטגורי",
+      "difficulty": "בינוני",
+      "file": "exams/מבחנים משנים קודמות-20260626/2023/מבחן 2023ב מועד ב פיתרון.pdf",
+      "solution": ""
     },
     {
       "exam": "2023 מועד ב",
@@ -511,7 +679,10 @@
       "points": 20,
       "main_topic": "דיאגנוסטיקה",
       "specific_topic": "הטרוסקדסטיות",
-      "description": "בדיקה וטיפול"
+      "description": "בדיקה וטיפול",
+      "difficulty": "קשה",
+      "file": "exams/מבחנים משנים קודמות-20260626/2023/מבחן 2023ב מועד ב פיתרון.pdf",
+      "solution": ""
     },
     {
       "exam": "2023 מועד ב",
@@ -520,7 +691,10 @@
       "points": 20,
       "main_topic": "דיאגנוסטיקה",
       "specific_topic": "מולטיקולינאריות",
-      "description": "הסבר אינטואיטיבי מאיור"
+      "description": "הסבר אינטואיטיבי מאיור",
+      "difficulty": "קשה",
+      "file": "exams/מבחנים משנים קודמות-20260626/2023/מבחן 2023ב מועד ב פיתרון.pdf",
+      "solution": ""
     },
     {
       "exam": "2023 מועד ב",
@@ -529,7 +703,10 @@
       "points": 10,
       "main_topic": "דיאגנוסטיקה",
       "specific_topic": "מולטיקולינאריות",
-      "description": "בדיקה ב-4 משתנים"
+      "description": "בדיקה ב-4 משתנים",
+      "difficulty": "בינוני",
+      "file": "exams/מבחנים משנים קודמות-20260626/2023/מבחן 2023ב מועד ב פיתרון.pdf",
+      "solution": ""
     },
     {
       "exam": "2024א מועד ב",
@@ -538,7 +715,10 @@
       "points": 10,
       "main_topic": "רגרסיה פשוטה",
       "specific_topic": "שינוי יחידות",
-      "description": "השפעת שינוי יחידות על אומדים"
+      "description": "השפעת שינוי יחידות על אומדים",
+      "difficulty": "בינוני",
+      "file": "exams/מבחנים משנים קודמות-20260626/מבחני 2024 2025/מבחן ברגרסיה 2024א מועד ב פיתרון.pdf",
+      "solution": ""
     },
     {
       "exam": "2024א מועד ב",
@@ -547,7 +727,10 @@
       "points": 10,
       "main_topic": "המודל הנורמלי",
       "specific_topic": "רווח סמך לשיפוע",
-      "description": "CI לשיפוע"
+      "description": "CI לשיפוע",
+      "difficulty": "בינוני",
+      "file": "exams/מבחנים משנים קודמות-20260626/מבחני 2024 2025/מבחן ברגרסיה 2024א מועד ב פיתרון.pdf",
+      "solution": ""
     },
     {
       "exam": "2024א מועד ב",
@@ -556,7 +739,10 @@
       "points": 10,
       "main_topic": "רגרסיה מרובה",
       "specific_topic": "מבחן F חלקי",
-      "description": "F חלקי"
+      "description": "F חלקי",
+      "difficulty": "בינוני",
+      "file": "exams/מבחנים משנים קודמות-20260626/מבחני 2024 2025/מבחן ברגרסיה 2024א מועד ב פיתרון.pdf",
+      "solution": ""
     },
     {
       "exam": "2024א מועד ב",
@@ -565,7 +751,10 @@
       "points": 20,
       "main_topic": "רגרסיה לוגיסטית",
       "specific_topic": "כתיבת מודל לוגיסטי",
-      "description": "כתיבת מודל"
+      "description": "כתיבת מודל",
+      "difficulty": "קשה",
+      "file": "exams/מבחנים משנים קודמות-20260626/מבחני 2024 2025/מבחן ברגרסיה 2024א מועד ב פיתרון.pdf",
+      "solution": ""
     },
     {
       "exam": "2024א מועד ב",
@@ -574,7 +763,10 @@
       "points": 10,
       "main_topic": "רגרסיה לוגיסטית",
       "specific_topic": "שיפוע מקסימלי",
-      "description": "נקודת חצי ושיפוע"
+      "description": "נקודת חצי ושיפוע",
+      "difficulty": "בינוני",
+      "file": "exams/מבחנים משנים קודמות-20260626/מבחני 2024 2025/מבחן ברגרסיה 2024א מועד ב פיתרון.pdf",
+      "solution": ""
     },
     {
       "exam": "2024א מועד ב",
@@ -583,7 +775,10 @@
       "points": 15,
       "main_topic": "רגרסיה מרובה",
       "specific_topic": "גאוס-מרקוב",
-      "description": "BLUE"
+      "description": "BLUE",
+      "difficulty": "קשה",
+      "file": "exams/מבחנים משנים קודמות-20260626/מבחני 2024 2025/מבחן ברגרסיה 2024א מועד ב פיתרון.pdf",
+      "solution": ""
     },
     {
       "exam": "2024א מועד ב",
@@ -592,7 +787,10 @@
       "points": 13,
       "main_topic": "בחירת מודלים",
       "specific_topic": "Cross-Validation",
-      "description": "LOOCV"
+      "description": "LOOCV",
+      "difficulty": "בינוני",
+      "file": "exams/מבחנים משנים קודמות-20260626/מבחני 2024 2025/מבחן ברגרסיה 2024א מועד ב פיתרון.pdf",
+      "solution": ""
     },
     {
       "exam": "2024ב מועד ב",
@@ -601,7 +799,10 @@
       "points": 10,
       "main_topic": "רגרסיה מרובה",
       "specific_topic": "פלט R / פרשנות",
-      "description": "פלט R"
+      "description": "פלט R",
+      "difficulty": "בינוני",
+      "file": "exams/מבחנים משנים קודמות-20260626/מבחני 2024 2025/מבחן ברגרסיה 2024ב מועד ב.pdf",
+      "solution": ""
     },
     {
       "exam": "2024ב מועד ב",
@@ -610,7 +811,10 @@
       "points": 10,
       "main_topic": "רגרסיה מרובה",
       "specific_topic": "R²adj / השוואת מודלים",
-      "description": "R²adj"
+      "description": "R²adj",
+      "difficulty": "בינוני",
+      "file": "exams/מבחנים משנים קודמות-20260626/מבחני 2024 2025/מבחן ברגרסיה 2024ב מועד ב.pdf",
+      "solution": ""
     },
     {
       "exam": "2024ב מועד ב",
@@ -619,7 +823,10 @@
       "points": 10,
       "main_topic": "המודל הנורמלי",
       "specific_topic": "רווח סמך למקדם",
-      "description": "CI"
+      "description": "CI",
+      "difficulty": "בינוני",
+      "file": "exams/מבחנים משנים קודמות-20260626/מבחני 2024 2025/מבחן ברגרסיה 2024ב מועד ב.pdf",
+      "solution": ""
     },
     {
       "exam": "2024ב מועד ב",
@@ -628,7 +835,10 @@
       "points": 15,
       "main_topic": "רגרסיה לוגיסטית",
       "specific_topic": "Odds Ratio",
-      "description": "OR ופרשנות"
+      "description": "OR ופרשנות",
+      "difficulty": "קשה",
+      "file": "exams/מבחנים משנים קודמות-20260626/מבחני 2024 2025/מבחן ברגרסיה 2024ב מועד ב.pdf",
+      "solution": ""
     },
     {
       "exam": "2024ב מועד ב",
@@ -637,7 +847,10 @@
       "points": 15,
       "main_topic": "רגרסיה לוגיסטית",
       "specific_topic": "מבחן Deviance (LRT)",
-      "description": "Deviance"
+      "description": "Deviance",
+      "difficulty": "קשה",
+      "file": "exams/מבחנים משנים קודמות-20260626/מבחני 2024 2025/מבחן ברגרסיה 2024ב מועד ב.pdf",
+      "solution": ""
     },
     {
       "exam": "2024ב מועד ב",
@@ -646,7 +859,10 @@
       "points": 20,
       "main_topic": "רגרסיה מרובה",
       "specific_topic": "הטיית משתנה מושמט (OVB)",
-      "description": "OVB + שונות"
+      "description": "OVB + שונות",
+      "difficulty": "קשה",
+      "file": "exams/מבחנים משנים קודמות-20260626/מבחני 2024 2025/מבחן ברגרסיה 2024ב מועד ב.pdf",
+      "solution": ""
     },
     {
       "exam": "2024ב מועד ב",
@@ -655,7 +871,10 @@
       "points": 10,
       "main_topic": "רגרסיה מרובה",
       "specific_topic": "שונות מוגברת",
-      "description": "שונות מהוספת משתנה מיותר"
+      "description": "שונות מהוספת משתנה מיותר",
+      "difficulty": "בינוני",
+      "file": "exams/מבחנים משנים קודמות-20260626/מבחני 2024 2025/מבחן ברגרסיה 2024ב מועד ב.pdf",
+      "solution": ""
     },
     {
       "exam": "2025ב מועד ב",
@@ -664,7 +883,10 @@
       "points": 10,
       "main_topic": "רגרסיה מרובה",
       "specific_topic": "פלט R / פרשנות",
-      "description": "פלט R"
+      "description": "פלט R",
+      "difficulty": "בינוני",
+      "file": "exams/מבחנים משנים קודמות-20260626/מבחני 2024 2025/מבחן ברגרסיה 2025ב מועד ב .pdf",
+      "solution": ""
     },
     {
       "exam": "2025ב מועד ב",
@@ -673,7 +895,10 @@
       "points": 15,
       "main_topic": "רגרסיה מרובה",
       "specific_topic": "מבחן F חלקי",
-      "description": "F חלקי"
+      "description": "F חלקי",
+      "difficulty": "קשה",
+      "file": "exams/מבחנים משנים קודמות-20260626/מבחני 2024 2025/מבחן ברגרסיה 2025ב מועד ב .pdf",
+      "solution": ""
     },
     {
       "exam": "2025ב מועד ב",
@@ -682,7 +907,10 @@
       "points": 10,
       "main_topic": "המודל הנורמלי",
       "specific_topic": "רווח סמך למקדם",
-      "description": "CI"
+      "description": "CI",
+      "difficulty": "בינוני",
+      "file": "exams/מבחנים משנים קודמות-20260626/מבחני 2024 2025/מבחן ברגרסיה 2025ב מועד ב .pdf",
+      "solution": ""
     },
     {
       "exam": "2025ב מועד ב",
@@ -691,7 +919,10 @@
       "points": 15,
       "main_topic": "דיאגנוסטיקה",
       "specific_topic": "Leverage / Cook",
-      "description": "חריגים והנפה"
+      "description": "חריגים והנפה",
+      "difficulty": "קשה",
+      "file": "exams/מבחנים משנים קודמות-20260626/מבחני 2024 2025/מבחן ברגרסיה 2025ב מועד ב .pdf",
+      "solution": ""
     },
     {
       "exam": "2025ב מועד ב",
@@ -700,7 +931,10 @@
       "points": 15,
       "main_topic": "דיאגנוסטיקה",
       "specific_topic": "הטרוסקדסטיות",
-      "description": "זיהוי וטיפול"
+      "description": "זיהוי וטיפול",
+      "difficulty": "קשה",
+      "file": "exams/מבחנים משנים קודמות-20260626/מבחני 2024 2025/מבחן ברגרסיה 2025ב מועד ב .pdf",
+      "solution": ""
     },
     {
       "exam": "2025ב מועד ב",
@@ -709,7 +943,10 @@
       "points": 18,
       "main_topic": "בחירת מודלים",
       "specific_topic": "אופטימיות / Cp",
-      "description": "אופטימיות ותיקון"
+      "description": "אופטימיות ותיקון",
+      "difficulty": "קשה",
+      "file": "exams/מבחנים משנים קודמות-20260626/מבחני 2024 2025/מבחן ברגרסיה 2025ב מועד ב .pdf",
+      "solution": ""
     }
   ]
 }
