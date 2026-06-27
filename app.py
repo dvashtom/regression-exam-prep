@@ -18,7 +18,7 @@ st.markdown("""<style>
 [data-testid="stSidebar"]{background-color:var(--bg-secondary)!important;border-left:1px solid var(--border)!important;direction:rtl;text-align:right}
 [data-testid="stSidebar"] *{color:var(--text-primary)!important}
 .main .block-container{direction:rtl;text-align:right;max-width:1200px}
-code,pre{direction:ltr;text-align:left}
+code,pre{direction:ltr;text-align:left;color:#1a1a1a!important;background-color:#f0f0f0!important}
 h1,h2,h3,h4,h5,h6{color:var(--text-primary)!important}
 [data-testid="stMetric"]{background:var(--bg-secondary)!important;border:1px solid var(--border)!important;border-radius:12px!important;padding:1rem!important;direction:rtl;text-align:right}
 [data-testid="stMetric"] label{color:var(--text-secondary)!important}
@@ -39,6 +39,16 @@ div,span,label,p,li,td,th,summary{color:var(--text-primary)!important}
 [data-testid="stWidgetLabel"] p{color:var(--text-primary)!important}
 [data-testid="stExpanderDetails"] *{color:var(--text-primary)!important}
 strong,b{color:var(--text-primary)!important}
+/* Force RTL on all elements */
+*{direction:rtl}
+.stApp *{text-align:right}
+[data-testid="stExpander"] details,[data-testid="stExpanderDetails"]{direction:rtl;text-align:right}
+[data-baseweb="select"]>div{direction:rtl;text-align:right}
+[data-testid="stAlert"] div{direction:rtl;text-align:right}
+[data-testid="stMetric"] *{direction:rtl;text-align:right}
+.stSelectbox label,.stMultiSelect label{direction:rtl;text-align:right}
+code,pre,[data-testid="stCode"]{direction:ltr!important;text-align:left!important}
+[data-testid="stCode"] code{color:#1a1a1a!important;background-color:#f0f0f0!important}
 @media(max-width:768px){.main .block-container{padding:1rem .5rem}h1{font-size:1.5rem!important}}
 </style>""", unsafe_allow_html=True)
 
@@ -80,7 +90,7 @@ if page=="ראשי":
     st.markdown('<p style="color:#8b949e;text-align:center;font-size:1.2em;margin-top:0;">הכנה למבחן ברגרסיה – ב׳ 2026</p>', unsafe_allow_html=True)
     
     # Full-page Canvas animation
-    st.components.v1.html("""<div style="position:relative;overflow:hidden;width:100%;height:500px;border-radius:16px;"><canvas id="mc" style="width:100%;height:100%;display:block;position:absolute;top:0;left:0;"></canvas><div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);text-align:center;z-index:10;pointer-events:none"><h2 style="color:#58a6ff;font-size:2.5em;margin:0;text-shadow:0 0 30px rgba(88,166,255,.6);font-family:sans-serif">📊 Regression Matrix</h2><p style="color:#e6edf3;margin-top:12px;font-family:sans-serif;font-size:1.1em;">מטריצת נושאים דינמית</p></div></div><script>!function(){const c=document.getElementById("mc");if(!c)return;const x=c.getContext("2d");function resize(){c.width=c.parentElement.offsetWidth||900;c.height=500}resize();window.addEventListener("resize",resize);const t=["F-test","OLS","CI","R²","WLS","Logistic","OVB","Residuals","Dummy","VIF","SSE","MSE","t-test","BLUE","β̂","σ²","Sxy","Hat Matrix"],p=[];for(let i=0;i<80;i++)p.push({x:Math.random()*c.width,y:Math.random()*c.height,vx:(Math.random()-.5)*.5,vy:(Math.random()-.5)*.5,s:Math.random()*3+1.5,a:Math.random()*.5+.2,t:t[Math.floor(Math.random()*t.length)],st:Math.random()>.4});function draw(){x.fillStyle="rgba(13,17,23,.12)";x.fillRect(0,0,c.width,c.height);p.forEach((a,i)=>{a.x+=a.vx;a.y+=a.vy;if(a.x<0||a.x>c.width)a.vx*=-1;if(a.y<0||a.y>c.height)a.vy*=-1;p.forEach((b,j)=>{if(i===j)return;const d=Math.sqrt((a.x-b.x)**2+(a.y-b.y)**2);if(d<130){x.strokeStyle="rgba(88,166,255,"+(0.15*(1-d/130))+")";x.lineWidth=.6;x.beginPath();x.moveTo(a.x,a.y);x.lineTo(b.x,b.y);x.stroke()}});x.beginPath();x.arc(a.x,a.y,a.s,0,Math.PI*2);x.fillStyle="rgba(88,166,255,"+a.a+")";x.fill();if(a.st){x.font="10px monospace";x.fillStyle="rgba(188,140,255,"+(a.a*.8)+")";x.fillText(a.t,a.x+6,a.y-6)}});requestAnimationFrame(draw)}draw()}()</script>""", height=510)
+    st.components.v1.html("""<div style="position:relative;overflow:hidden;width:100%;height:500px;border-radius:16px;"><canvas id="mc" style="width:100%;height:100%;display:block;position:absolute;top:0;left:0;"></canvas><div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);text-align:center;z-index:10;pointer-events:none"><h2 style="color:#58a6ff;font-size:2.5em;margin:0;text-shadow:0 0 30px rgba(88,166,255,.6);font-family:sans-serif">📊 Regression</h2><p style="color:#e6edf3;margin-top:12px;font-family:sans-serif;font-size:1.1em;">מטריצת נושאים דינמית</p></div></div><script>!function(){const c=document.getElementById("mc");if(!c)return;const x=c.getContext("2d");function resize(){c.width=c.parentElement.offsetWidth||900;c.height=500}resize();window.addEventListener("resize",resize);const t=["F-test","OLS","CI","R²","WLS","Logistic","OVB","Residuals","Dummy","VIF","SSE","MSE","t-test","BLUE","β̂","σ²","Sxy","Hat Matrix"],p=[];for(let i=0;i<80;i++)p.push({x:Math.random()*c.width,y:Math.random()*c.height,vx:(Math.random()-.5)*.5,vy:(Math.random()-.5)*.5,s:Math.random()*3+1.5,a:Math.random()*.5+.2,t:t[Math.floor(Math.random()*t.length)],st:Math.random()>.4});function draw(){x.fillStyle="rgba(13,17,23,.12)";x.fillRect(0,0,c.width,c.height);p.forEach((a,i)=>{a.x+=a.vx;a.y+=a.vy;if(a.x<0||a.x>c.width)a.vx*=-1;if(a.y<0||a.y>c.height)a.vy*=-1;p.forEach((b,j)=>{if(i===j)return;const d=Math.sqrt((a.x-b.x)**2+(a.y-b.y)**2);if(d<130){x.strokeStyle="rgba(88,166,255,"+(0.15*(1-d/130))+")";x.lineWidth=.6;x.beginPath();x.moveTo(a.x,a.y);x.lineTo(b.x,b.y);x.stroke()}});x.beginPath();x.arc(a.x,a.y,a.s,0,Math.PI*2);x.fillStyle="rgba(88,166,255,"+a.a+")";x.fill();if(a.st){x.font="10px monospace";x.fillStyle="rgba(188,140,255,"+(a.a*.8)+")";x.fillText(a.t,a.x+6,a.y-6)}});requestAnimationFrame(draw)}draw()}()</script>""", height=510)
     
     st.markdown("---")
     c1,c2,c3=st.columns(3)
