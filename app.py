@@ -23,7 +23,10 @@ h1,h2,h3,h4,h5,h6{color:var(--text-primary)!important}
 [data-testid="stMetric"]{background:var(--bg-secondary)!important;border:1px solid var(--border)!important;border-radius:12px!important;padding:1rem!important;direction:rtl;text-align:right}
 [data-testid="stMetric"] label{color:var(--text-secondary)!important}
 [data-testid="stMetric"] [data-testid="stMetricValue"]{color:var(--accent)!important}
-[data-testid="stExpander"]{background:var(--bg-secondary)!important;border:1px solid var(--border)!important;border-radius:8px!important;margin-bottom:8px!important}
+[data-testid="stExpander"]{background:var(--bg-secondary)!important;border:1px solid var(--border)!important;border-radius:8px!important;margin-bottom:8px!important;color:var(--text-primary)!important}
+[data-testid="stExpander"] summary span{color:var(--text-primary)!important}
+[data-testid="stExpander"] summary p{color:var(--text-primary)!important}
+[data-testid="stExpander"] [data-testid="stMarkdownContainer"] p{color:var(--text-primary)!important}
 [data-testid="stSelectbox"]>div>div{background-color:var(--bg-tertiary)!important;color:var(--text-primary)!important;border-color:var(--border)!important}
 .stButton>button{background:linear-gradient(135deg,var(--accent),var(--accent-purple))!important;color:white!important;border:none!important;border-radius:8px!important;font-weight:600!important;transition:all .3s ease!important}
 .stButton>button:hover{transform:translateY(-2px)!important;box-shadow:0 4px 12px rgba(88,166,255,.4)!important}
@@ -173,6 +176,24 @@ elif page=="סיווג שאלות":
             st.write(f"נושא: {q['main_topic']} → {q['specific_topic']} | קושי: {q.get('difficulty','?')}")
             if q.get('solution'):
                 st.success(f"💡 {q['solution']}")
+            if q.get('file_url'):
+                file_url = q['file_url']
+                raw_url = f"https://raw.githubusercontent.com/dvashtom/regression-exam-prep/main/{file_url}"
+                if file_url.endswith('.pdf'):
+                    viewer_url = f"https://docs.google.com/gview?url={raw_url}&embedded=true"
+                else:
+                    viewer_url = f"https://view.officeapps.live.com/op/embed.aspx?src={raw_url}"
+                btn_key = f"prev_{q['exam']}_{q['question']}_{q['sub']}"
+                if st.button("📄 תצוגה מקדימה", key=btn_key):
+                    st.components.v1.html(f"""
+                    <div id="modal" style="position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.85);z-index:9999;display:flex;align-items:center;justify-content:center;">
+                        <div style="width:90%;height:90%;background:#1a1a2e;border-radius:12px;position:relative;box-shadow:0 20px 60px rgba(0,0,0,0.5);">
+                            <button onclick="document.getElementById('modal').style.display='none'" style="position:absolute;top:12px;right:12px;font-size:20px;border:none;background:#f85149;color:white;border-radius:50%;width:36px;height:36px;cursor:pointer;z-index:10000;font-weight:bold;">✕</button>
+                            <iframe src="{viewer_url}" style="width:100%;height:100%;border:none;border-radius:12px;"></iframe>
+                        </div>
+                    </div>
+                    <script>document.addEventListener('keydown',function(e){{if(e.key==='Escape')document.getElementById('modal').style.display='none'}})</script>
+                    """, height=700)
 
 # ========== FORMULAS ==========
 elif page=="נוסחאות":
