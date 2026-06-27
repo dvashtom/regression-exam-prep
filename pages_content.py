@@ -178,8 +178,8 @@ def render_chat():
         assistant = get_assistant()
         
         if not assistant.is_vector_store_ready():
-            st.warning("⚠️ בסיס הנתונים הווקטורי לא נבנה עדיין. הרץ את הפקודה הבאה:")
-            st.code("cd data && python build_vector_store.py", language="bash")
+            st.warning("⚠️ בסיס הנתונים הווקטורי לא נבנה עדיין. הרץ את הפקודה הבאה בטרמינל:")
+            st.code("cd ~/Desktop/רגרסיה/regression_exam_prep && python3 data/build_vector_store.py", language="bash")
             st.info("לאחר הרצת הפקודה, רענן את הדף.")
             return
     except ImportError as e:
