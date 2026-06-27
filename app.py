@@ -137,7 +137,23 @@ elif page=="סיווג שאלות":
             if q.get('solution'):
                 st.success(f"💡 {q['solution']}")
             if q.get('file'):
-                st.markdown(f"[📄 פתח מבחן מקורי](https://github.com/dvashtom/regression-exam-prep/blob/main/{q.get('file_url', '')})")
+                file_path = q.get('file_url', '')
+                if file_path:
+                    raw_url = f"https://raw.githubusercontent.com/dvashtom/regression-exam-prep/main/{file_path}"
+                    if file_path.endswith('.pdf'):
+                        viewer_url = f"https://docs.google.com/gview?url={raw_url}&embedded=true"
+                    else:
+                        viewer_url = f"https://view.officeapps.live.com/op/embed.aspx?src={raw_url}"
+                    if st.button("📄 תצוגה מקדימה", key=f"preview_{q['exam']}_{q['question']}_{q['sub']}"):
+                        st.components.v1.html(f"""
+                        <div id="modal" style="position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.8);z-index:9999;display:flex;align-items:center;justify-content:center;">
+                            <div style="width:90%;height:90%;background:white;border-radius:10px;position:relative;">
+                                <button onclick="document.getElementById('modal').style.display='none'" style="position:absolute;top:10px;right:10px;font-size:24px;border:none;background:red;color:white;border-radius:50%;width:35px;height:35px;cursor:pointer;">✕</button>
+                                <iframe src="{viewer_url}" style="width:100%;height:100%;border:none;border-radius:10px;"></iframe>
+                            </div>
+                        </div>
+                        <script>document.addEventListener('keydown',function(e){{if(e.key==='Escape')document.getElementById('modal').style.display='none'}})</script>
+                        """, height=700)
     
     # Stats
     if qs_filtered:
