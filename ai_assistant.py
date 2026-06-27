@@ -18,7 +18,7 @@ from openai import OpenAI
 load_dotenv(Path(__file__).parent / ".env")
 
 # Configuration
-AI_PROXY_URL = os.getenv("AI_PROXY_URL", "http://localhost:8080/v1")
+AI_PROXY_URL = os.getenv("AI_PROXY_URL", "http://localhost:6655/v1")
 AI_MODEL_NAME = os.getenv("AI_MODEL_NAME", "claude-sonnet-4-20250514")
 AI_API_KEY = os.getenv("AI_API_KEY", "sk-placeholder")
 VECTOR_STORE_PATH = os.getenv(

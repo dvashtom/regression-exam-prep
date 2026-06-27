@@ -24,7 +24,7 @@ from dotenv import load_dotenv
 # Load env
 load_dotenv(Path(__file__).parent.parent / ".env")
 
-AI_PROXY_URL = os.getenv("AI_PROXY_URL", "http://localhost:8080/v1")
+AI_PROXY_URL = os.getenv("AI_PROXY_URL", "http://localhost:6655/v1")
 AI_API_KEY = os.getenv("AI_API_KEY", "sk-placeholder")
 EMBEDDING_MODEL = os.getenv("EMBEDDING_MODEL", "text-embedding-3-small")
 
