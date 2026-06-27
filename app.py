@@ -131,11 +131,13 @@ elif page=="סיווג שאלות":
     
     # Display results
     for q in qs_filtered:
-        with st.expander(f"{q['exam']} | שאלה {q['question']}{q['sub']} ({q['points']} נק') — {q['specific_topic']}"):
-            st.write(f"**תיאור:** {q['description']}")
-            st.write(f"**נושא ראשי:** {q['main_topic']}")
-            st.write(f"**נושא ספציפי:** {q['specific_topic']}")
-            st.write(f"**מבחן:** {q['exam']}")
+        with st.expander(f"{q['exam']} | ש{q['question']}{q['sub']} ({q['points']}נק') — {q['specific_topic']} [{q.get('difficulty','?')}]"):
+            st.write(f"**{q['description']}**")
+            st.write(f"נושא: {q['main_topic']} → {q['specific_topic']} | קושי: {q.get('difficulty','?')}")
+            if q.get('solution'):
+                st.success(f"💡 {q['solution']}")
+            if q.get('file'):
+                st.markdown(f"[📄 פתח מבחן](https://github.com/dvashtom/regression-exam-prep/blob/main/{q['file']})")
     
     # Stats
     if qs_filtered:
