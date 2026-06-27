@@ -137,7 +137,7 @@ elif page=="סיווג שאלות":
             if q.get('solution'):
                 st.success(f"💡 {q['solution']}")
             if q.get('file'):
-                st.markdown(f"[📄 פתח מבחן](https://github.com/dvashtom/regression-exam-prep/blob/main/{q['file']})")
+                st.markdown(f"[📄 פתח מבחן מקורי](https://github.com/dvashtom/regression-exam-prep/blob/main/{q.get('file_url', '')})")
     
     # Stats
     if qs_filtered:
