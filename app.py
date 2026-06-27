@@ -51,7 +51,12 @@ strong,b{color:var(--text-primary)!important}
 [data-testid="stMetric"] *{direction:rtl;text-align:right}
 .stSelectbox label,.stMultiSelect label{direction:rtl;text-align:right}
 code,pre,[data-testid="stCode"]{direction:ltr!important;text-align:left!important}
-[data-testid="stCode"] code{color:#1a1a1a!important;background-color:#f0f0f0!important}
+[data-testid="stCode"] code{color:#1a1a1a!important;background-color:#f6f8fa!important}
+[data-testid="stCode"] pre{color:#1a1a1a!important;background-color:#f6f8fa!important}
+[data-testid="stCode"] pre code{color:#1a1a1a!important}
+[data-testid="stCode"]{background-color:#f6f8fa!important}
+.stCode,.stCode span,.stCode code,.stCode pre{color:#1a1a1a!important}
+pre code span{color:#1a1a1a!important}
 @media(max-width:768px){.main .block-container{padding:1rem .5rem}h1{font-size:1.5rem!important}}
 </style>""", unsafe_allow_html=True)
 
